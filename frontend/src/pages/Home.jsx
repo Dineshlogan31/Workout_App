@@ -11,7 +11,7 @@ const Home = () => {
 
     useEffect(()=>{
         const fetchWorkouts= async ()=>{
-            const response=await fetch("https://workout-app-fxzl.vercel.app/",{
+            const response=await fetch("https://workout-app-fxzl.vercel.app/api/workouts",{
                 headers:{
                     'Authorization':`Bearer ${user.token}`
                 }

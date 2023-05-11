@@ -19,7 +19,7 @@ const {dispatch,workout}=UseWorkoutContext()
  }
  console.log("user added");
         const workout={title,load,reps}
-        const response=await fetch("https://workout-app-fxzl.vercel.app/",{
+        const response=await fetch("https://workout-app-fxzl.vercel.app/api/workouts",{
             method:"POST",
             body:JSON.stringify(workout),
             headers:{
